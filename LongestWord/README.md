@@ -18,7 +18,7 @@ Output:love
 
 View Hint
 Orginal template Reset Change theme Theme DiscussionAll SolutionsView Top Solution
-
+
 Run Code  Ready to submit? Be sure to run the test cases below.  No
 Run Test Case #1Run Test Case #2
 Parameter Testing
