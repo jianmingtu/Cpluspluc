@@ -1,6 +1,6 @@
 ﻿# https://www.coderbyte.com/editor/Longest%20Word:Cpp
 
-Coderbyte
+Coderbyte 
 ChallengesLearn ⌄ProfileMembershipOrganizations
 Tags: string manipulation, searching | Difficulty: Easy
 Challenge 
