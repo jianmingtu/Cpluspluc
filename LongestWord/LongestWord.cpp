@@ -17,10 +17,11 @@
 #include "pch.h"
 #include <iostream>
 #include <string>
-#include <vector>
+#include <deque>
 #include <sstream>
 #include <algorithm>
 #include <cctype>
+#include <deque>
 
 using namespace std;
 
