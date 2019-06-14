@@ -43,8 +43,9 @@
 
 #include "pch.h"
 #include <iostream>
-#include <vector>
+#include <deque>
 #include <algorithm>
+#include <deque>
 
 int ROWS = 3;
 int COLUMNS = 3;
@@ -60,17 +61,17 @@ using namespace std;
 /// <param name="r">current row</param>
 /// <param name="c">current col</param>
 /// <param name="elems"> return the list of cells</param>
-void getElems(vector<pair<RowInt, ColInt>> rowElems, int r, int c, vector<vector<pair<RowInt, ColInt>>>& elems)
+void getElems(deque<pair<RowInt, ColInt>> rowElems, int r, int c, deque<deque<pair<RowInt, ColInt>>>& elems)
 {
 	// create  rows from rowElems
-	vector<int> rows;
+	deque<int> rows;
 	std::for_each(rowElems.begin(), rowElems.end(), [&rows](pair<int, int>& p) { rows.push_back(p.first); });
 
 
 	for (int i = 0; i < ROWS; ++i)
 	{
-		vector<pair<int, int>> newRowElems(rowElems);
-		vector<int> newRows = rows;
+		deque<pair<int, int>> newRowElems(rowElems);
+		deque<int> newRows = rows;
 
 		if (std::find(rows.begin(), rows.end(), i) == rows.end())
 		{
@@ -89,10 +90,10 @@ void getElems(vector<pair<RowInt, ColInt>> rowElems, int r, int c, vector<vector
 	}
 }
 
-bool isMagicSquare(vector<vector<int>>& dynamicArray)
+bool isMagicSquare(deque<deque<int>>& dynamicArray)
 {
-	vector<pair<int, int>> rowElems;
-	vector<vector<pair<int, int>>> elems;
+	deque<pair<int, int>> rowElems;
+	deque<deque<pair<int, int>>> elems;
 	bool getSum = false;
 	int preSum = 0;
 
@@ -120,7 +121,7 @@ bool isMagicSquare(vector<vector<int>>& dynamicArray)
 
 int main()
 {
-	vector<vector<int> > dynamicArray{	{ -41, -29, 2 },
+	deque<deque<int> > dynamicArray{	{ -41, -29, 2 },
 										{ 28, 40, 71 },
 										{ 11, 23, 54 }}; 
 
