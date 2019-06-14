@@ -120,12 +120,9 @@ bool isMagicSquare(vector<vector<int>>& dynamicArray)
 
 int main()
 {
-
-	vector<vector<int> > dynamicArray(ROWS, vector<int>(COLUMNS));
-
-	dynamicArray[0] = { -41, -29, 2 };
-	dynamicArray[1] = { 28, 40, 71 };
-	dynamicArray[2] = { 11, 23, 54 };
+	vector<vector<int> > dynamicArray{	{ -41, -29, 2 },
+										{ 28, 40, 71 },
+										{ 11, 23, 54 }};
 
 	bool b = isMagicSquare(dynamicArray);
 
