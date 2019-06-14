@@ -122,7 +122,7 @@ int main()
 {
 	vector<vector<int> > dynamicArray{	{ -41, -29, 2 },
 										{ 28, 40, 71 },
-										{ 11, 23, 54 }};
+										{ 11, 23, 54 }}; 
 
 	bool b = isMagicSquare(dynamicArray);
 
